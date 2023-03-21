@@ -2,19 +2,17 @@ using System;
 
 class Program {
   public static void Main (string[] args) {
-    int numero1, numero2;
+    Consolr.WriteLine("Digite um numero: ");
+    int num = int.Parse(Console.ReadLine());
 
-    Console.WriteLine("Digite um numero: ");
-    numero1 = int.Parse(Console.ReadLine());
-    numero2 = int.Parse(Console.ReadLine());
-
-    if (numero1 > numero2) {
-      Console.WriteLine("O numero " + numero1 + " é maior que " + numero2);
-    }
-    else {
-      Console.WriteLine("O numero " + numero2 + " é maior que " + numero1);
+    if (num > 0) {
+      Console.WriteLine("O numero é positivo");
+    } else if (num < 0) {
+      Console.WriteLine("O numero é negativo");
+    } else {
+      Console.WriteLine("O numero é neutro");
     }
     
-    Console.ReadLine();
-    }
+    Console.Readline();
+  } 
 }
