@@ -12,7 +12,7 @@ class Program {
     } else {
       Console.WriteLine("O numero é neutro");
     }
-    
+  
     Console.Readline();
   } 
 }
